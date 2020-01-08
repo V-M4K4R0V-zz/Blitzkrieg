@@ -1,32 +1,44 @@
 //author : V-M4K4R0V
 //add music , graphics , national anthem
 //more dialogs
+
+#include <stdio.h>
+
 int main()
 {
-printf("privyet!! Comrade"\n);
+    char    enemy;
+    char    path;
+    char    RSPY;
+    char    Cuser;
+    int     i;
 
-//im = Image.open('/home/o11q/Desktop/git clone/chto-takoe-stolitsa/mozer racha/put.jpg')
-//print(im.format, im.size, im.mode)
+    printf("privyet!! Comrade\n");
 
-comrade_user = input('enter your name : ') //NameError
 
-R_SPY = open('/home/o11q/Desktop/git clone/Stalina-Blitzkrieg/mozer racha/names.txt','r')
+    printf('enter your name : ');
+    scanf("%s",Cuser);
 
-i = 19 //fix STRING INDEX   
+    RSPY = open('/home/o11q/Desktop/git clone/Stalina-Blitzkrieg/mozer racha/names.txt','r');
 
-//print("You know what ill call you " + R_SPY.readline(i))
-path = input("is it okay to call you "  + R_SPY.readline(i) + "my FKHIEND [YES]or[NO] : ").upper() #fix \n
+    i = 19; 
+    printf("You know what ill call you %s \n",RSPY);
+    printf("is it okay to call you %s my FKHIEND [YES]or[NO] : ");
+    scanf("%s",path);
 
-//ADD A LOOP
-if(path == 'NO'):
-        print("SYKAA!! GET OUT U FUCKING WESTERN SPY")
-elif(path == 'YES'):
-    print("SO! my APYR what country  u want to invade today ?")
-    enemy = input("choose your enemy : ").lower()
-    world_map(enemy) #enemies from enemies.py
-else:
-    print("you fucking donkey i said yes or not")
-    //playsound('audio.mp3') #ownage pranks ill slap ur ass like 3abas
-R_SPY.close() //close theTXT FILE
+    //ADD A LOOP
+    if (path == 'NO')
+    {
+        printf("SYKAA!! GET OUT U FUCKING WESTERN SPY");
+    }
+    else if(path == 'YES')
+    {
+        printf("SO! my APYR what country  u want to invade today ?");
+        printf("choose your enemy : ");
+        //call func here enemy
+    }
+    else
+    {
+        print("you fucking donkey i said yes or not %s \n",path);
+    }
     return 0;
 }
